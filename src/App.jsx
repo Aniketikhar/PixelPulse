@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import Grid from "./Components/Grid/Grid";
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="container d-flex flex-column-reverse flex-md-row">
-          <div className="grid">grid</div>
+          <div className="grid">
+            <Grid grid={grid} color={color} />
+          </div>
           <div className="content">
             <div className="headline text-white">
               <h1>Where pixels dance and colors come alive!</h1>
