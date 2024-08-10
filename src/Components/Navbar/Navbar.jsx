@@ -27,7 +27,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="https://port-folio-aniket-ikhar.vercel.app/">
+                <a className="nav-link" target='blank' href="https://port-folio-aniket-ikhar.vercel.app/">
                   About Me
                 </a>
               </li>

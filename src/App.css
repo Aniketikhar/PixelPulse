@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap");
 
 body{
   background-color: rgb(15,12,49);
+  font-family: "VT323", monospace;
 }
 
 .App{
@@ -11,10 +13,7 @@ body{
     
 }
 
-@media screen and (max-width: 600px) {
 
-
-}
 
 
 
