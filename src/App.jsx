@@ -95,18 +95,16 @@ function App() {
     <>
       <div className="App">
         <Navbar />
-        <div className="container d-flex flex-column-reverse flex-md-row">
-          <div className="grid">
-            <Grid grid={grid} color={color} />
-          </div>
-          <div className="content">
-            <div className="headline text-white">
-              <h1>Where pixels dance and colors come alive!</h1>
+        <div className="container row mx-auto">
+          
+          <div className=" col-12 col-lg-6 content py-5 ">
+            <div className="headline text-white text-center text-lg-start">
+              <h1>Where pixels dance and<br /> colors come alive!</h1>
               <p>
                 PixelPulse transforms text into a captivating visual experience.
                 Watch as characters flow seamlessly across a dynamic grid, with
                 each letter rendered as a pixelated pattern. With every passing
-                moment, colors shift randomly, bringing a vibrant, ever-changing
+                moment, colors shift randomly, ever-changing
                 spectacle to your screen.{" "}
               </p>
               <p>
@@ -114,21 +112,24 @@ function App() {
                 accordingly:
               </p>
             </div>
-            <form>
+            <form onSubmit={handleSubmit} className="d-flex align-items-center justify-content-center justify-content-lg-start">
               <input
                 type="text"
                 name="input"
-                className=" bg-black text-white border-0 px-3 py-2 rounded-2 outline-none w-50 "
+                className=" col-7 bg-black text-white border-0 px-3 py-2 rounded-2 outline-none "
                 placeholder="Enter text here..."
                 value={input}
                 onChange={ChangeInput}
                 required
                 id=""
               />
-              <button className="button-play">
+              <button className="col-5 button-play">
                 <span>PLAY NOW</span>
               </button>
             </form>
+          </div>
+          <div className="grid col-12 col-lg-6 py-lg-5 pb-5 ">
+            <Grid grid={grid} color={color} />
           </div>
         </div>
       </div>

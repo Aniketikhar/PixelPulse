@@ -5,6 +5,7 @@
     gap: 4px;
     
     background-color: rgb(10,10,46);
+    width: fit-content;
   }
   
   .grid-item {
@@ -15,12 +16,13 @@
   @media screen and (max-width: 600px) {
 
     .grid-container{
-    grid-template-columns: repeat(20, 10px);
-    grid-template-rows: repeat(15, 10px);
+    grid-template-columns: repeat(20, 15px);
+    grid-template-rows: repeat(15, 15px);
     gap: 2px;
+    width: fit-content;
     }
     .grid-item{
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
     }
   }

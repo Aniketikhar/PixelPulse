@@ -3,7 +3,7 @@ import './Grid.css';
 
 const Grid = ({ grid , color }) => {
   return (
-    <div className="grid-container">
+    <div className="grid-container mx-auto">
       {grid.map((row, i) =>
         row.map((cell, j) => (
           <div
