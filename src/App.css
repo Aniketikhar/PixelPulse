@@ -1,0 +1,15 @@
+
+
+.App{
+  background: url("assets/Background.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.grid{
+  width: 50%;
+}
+.content{
+  width: 50%;
+}
